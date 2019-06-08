@@ -15,8 +15,11 @@ export default {};
 <style>
 .panel-body {
   font-family: "Arizonia", cursive;
-  font: 24px;
+  font: large;
   color: grey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black !important;
 }
 
 .quote {
