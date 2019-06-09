@@ -4,7 +4,8 @@
       v-on="maxQuotesReached"
       b-alert
       variant="danger"
-      :show="maxQuotesReached"
+      v-model="maxQuotesReached"
+      dismissable
     >
       Maximum number of quotes added! Please delete a quote before adding more!
     </b-alert>
@@ -55,6 +56,7 @@ export default {
     deleteQuote(info) {
       info.event.preventDefault();
       this.quotes.splice(info.index, 1);
+      this.maxQuotesReached = false;
     }
   }
 };
