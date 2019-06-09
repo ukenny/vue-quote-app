@@ -9,7 +9,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    consoleLog(event) {
+      console.log(event);
+    }
+  }
+};
 </script>
 
 <style>
@@ -17,6 +23,7 @@ export default {};
   font-family: "Arizonia", cursive;
   font: large;
   color: grey;
+  size: 40px;
   border-style: solid;
   border-width: 1px;
   border-color: black !important;
